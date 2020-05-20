@@ -1,0 +1,32 @@
+{% extends "home.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for("static", filename="projects.css") }}" type="text/css">
+{% endblock %}
+{% block body %}
+<div class="container pt-5 pr-5">
+    <div class="row">
+        <div class="col-4">
+            <div class="card border border-light" style="width: 18rem;">
+                <a href="https://github.com/ray-project/tune-sklearn" target="_blank" class="card-link">
+                    <img class="card-img-top" src="{{ url_for("static", filename="tune.png") }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">tune-sklearn</h5>
+                        <p class="card-text">A cross validation package that allows users to do hyperparameter tuning on sklearn models 10x faster without sacrificing model performance.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border border-light" style="width: 18rem;">
+                <a href="https://electrolyte-ai.stanford.edu/" target="_blank" class="card-link">
+                    <img class="card-img-top" src="{{ url_for("static", filename="stanford-mse-logo.png") }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Electrolyte AI</h5>
+                        <p class="card-text">A web app created for Stanford Materials Computation and Theory Group that predicts the performance of materials for battery applications.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

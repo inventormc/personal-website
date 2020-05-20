@@ -1,0 +1,35 @@
+body {
+    background-color: #1a1a1a;
+    color: #ededed;
+    overflow-x: hidden !important; //horizontal
+    overflow-y: scroll; //vertical
+}
+
+#ulnav {
+    font-size: 20px;
+}
+
+ul.nav a:hover { 
+    color: #c9c9c9 !important; 
+}
+
+.nav-link {
+    color: #fafafa;
+}
+
+.subtext {
+    color: #bfbfbf;
+}
+
+#headshot {
+    margin-bottom: 2%;
+}
+
+.socials:hover {
+    color: #c9c9c9 !important; 
+}
+
+.socials {
+    color: #ededed;
+}
+

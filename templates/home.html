@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for("static", filename="home.css") }} "type="text/css">
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-4 text-center position-fixed">
+                <div class="row min-vh-100 align-items-center">
+                    <div class="col-12">
+                        <div class="row" id="headshot">
+                            <div class="col-12">
+                                <img src="{{ url_for("static", filename="headshot.png") }}" alt="headshot" id="headshot"/ width="150px" height="150px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h1>Michael Chau</h1>
+                                <p class="subtext">CS & Stats @ UC Berkeley</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="https://www.linkedin.com/in/michael-c-096231a8/" target="_blank" class="socials"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                                <a href="https://github.com/inventormc" target="_blank" class="socials"><i class="fa fa-github fa-2x"></i></a>
+                                <a href="https://www.instagram.com/michaeltchau/?hl=en" target="_blank" class="socials"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav flex-column" id="ulnav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="{{ url_for('about') }}">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ url_for("static", filename="Chau_Michael_Resume_Online.pdf") }}" target="_blank">Resume</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 offset-md-4">
+                {% block body %}
+                {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>

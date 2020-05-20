@@ -1,0 +1,28 @@
+{% extends "home.html" %}
+{% block body %}
+<div class="container pt-5 pr-5">
+    <div class="row">
+        <div class="col-12">
+            <h3>About me</h3>
+            <p>I’m a 2nd year at UC Berkeley studying Computer Science and Statistics. I’m interested in AI/ML, and am currently doing research in UC Berkeley’s RISE Lab with Joseph Gonzalez/Richard Liaw, working on a hyper parameter tuning package for sklearn (GitHub <a href="https://github.com/ray-project/tune-sklearn" target="_blank">here</a>). I’m also interning with Aionics (RhoAI), working on various projects using machine learning for accelerated materials discovery and design. Take a look at some of the <a href="{{ url_for('projects') }}">projects</a> I’ve worked on!</p>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-12">
+            <h3>Current/Former positions</h3>
+            <ul>
+                <li>Research Intern @ <a href="https://rise.cs.berkeley.edu/" target="_blank">UC Berkeley Rise Lab</a></li>
+                <li>SWE/Data Science Intern @ <a href="https://rho.ai/" target="_blank">Aionics (RhoAI)</a></li>
+                <li>Research Intern @ <a href="https://www.lbl.gov/" target="_blank">Lawrence Berkeley National Lab</a></li>
+                <li>Research Intern @ <a href="https://reedgroup.stanford.edu/index.html" target="_blank">Stanford University (under Evan Reed)</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-12">
+            <h3>Github commit chart</h3>
+            <img src="https://ghchart.rshah.org/0c8225/inventormc" alt="inventormc Github Chart"/>
+        </div>
+    </div>
+</div>
+{% endblock %}
